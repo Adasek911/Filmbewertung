@@ -1,2 +1,2 @@
 # Filmbewertung
-Binärklassifizierung
+Ein Beispiel für eine Mehrfachklassifizierung: Klassifizierung von Nachrichtenmeldungen
