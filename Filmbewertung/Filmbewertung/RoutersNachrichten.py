@@ -35,13 +35,13 @@ one_hot_test_labels = to_categorical(test_labels)
 
 #Definition des Modells
 model = models.Sequential()
-model.add(layers.Dense(64, activation='relu',
+model.add(layers.Dense(512, activation='relu',
                        input_shape=(10000,)))
-model.add(layers.Dense(64, activation='relu'))
+model.add(layers.Dropout(0.5))
 model.add(layers.Dense(46, activation='softmax'))
 
 #Kompilierung des Modells
-model.compile(optimizer='rmsprop',
+model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 
